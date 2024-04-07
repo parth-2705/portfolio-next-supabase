@@ -135,6 +135,10 @@ hr {
   .hero-container .hero-text {
     width: 100%;
   }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .hero-container .hero-text h2 {
