@@ -1,6 +1,6 @@
 import supabase from "@/utils/supabase";
 import { useEffect, useState } from "react";
-import ProgressBar from "./Progressbar";
+import ProgressBar from "@/components/Progressbar";
 
 const Skills = () => {
   const [data, setData] = useState([]);
