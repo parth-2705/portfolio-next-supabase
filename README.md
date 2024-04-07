@@ -2,7 +2,7 @@ This is an open source portfolio website made with NextJs with a Supabase backen
 
 ## Getting started
 ### Setting up Supabase
-1.Visit supabase [website](https://supabase.com/dashboard/projects) and create a new project
+1. Visit supabase [website](https://supabase.com/dashboard/projects) and create a new project
 2. Create a new database 
 3. Create tables `basic`, `skills`, `experience` and `education`
 
