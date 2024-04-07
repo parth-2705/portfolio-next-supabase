@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 const Footer = () => {
   const [data, setData] = useState([]);
   const getBasic = async () => {
-    let { data: basic, error } = await supabase
-      .from("basic")
-      .select("first_name", "github", "linkedin");
+    let { data: basic, error } = await supabase.from("basic").select("*");
     console.log(basic, error);
     setData(basic[0]);
   };

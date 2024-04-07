@@ -1,7 +1,6 @@
 export const dateToMonth = (dateString) => {
   if (!dateString) return null;
   const date = new Date(dateString);
-  console.log(date);
   const year = date.getFullYear();
   const month = date.getMonth();
   const months = [

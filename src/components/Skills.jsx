@@ -6,7 +6,6 @@ const Skills = () => {
   const [data, setData] = useState([]);
   const getBasic = async () => {
     let { data: skills, error } = await supabase.from("skills").select("*");
-    console.log(skills, error);
     setData(skills);
   };
   useEffect(() => {

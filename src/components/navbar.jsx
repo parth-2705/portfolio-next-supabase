@@ -8,7 +8,6 @@ const Navbar = () => {
     let { data: basic, error } = await supabase
       .from("basic")
       .select("first_name", "resume");
-    console.log(basic, error);
     setData(basic[0]);
   };
   useEffect(() => {
