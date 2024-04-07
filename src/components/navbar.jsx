@@ -7,7 +7,8 @@ const Navbar = () => {
   const getBasic = async () => {
     let { data: basic, error } = await supabase
       .from("basic")
-      .select("first_name", "resume");
+      .select("resume, first_name");
+    console.log(basic[0]);
     setData(basic[0]);
   };
   useEffect(() => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       <div className="logo">
         <Link href="/">{data.first_name}'s Portfolio</Link>
       </div>
-      <a href={data.resume} className="cta-btn">
+      <a href={data.resume} target="_blank" className="cta-btn">
         Resume
       </a>
     </div>
