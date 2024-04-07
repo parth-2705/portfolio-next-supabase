@@ -1,4 +1,4 @@
-## Portfolio
+# Portfolio
 This is an open source portfolio website made with NextJs with a Supabase backend.
 
 ## Getting started
