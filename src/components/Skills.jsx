@@ -1,6 +1,6 @@
 import supabase from "@/utils/supabase";
 import { useEffect, useState } from "react";
-import ProgressBar from "@/components/Progressbar";
+import Progressbar from "@/components/Progressbar";
 
 const Skills = () => {
   const [data, setData] = useState([]);
@@ -19,7 +19,7 @@ const Skills = () => {
         {data.map((skill) => (
           <div className="skill">
             <h4>{skill.name}</h4>
-            <ProgressBar level={skill.level} total={5}></ProgressBar>
+            <Progressbar level={skill.level} total={5}></Progressbar>
           </div>
         ))}
       </div>

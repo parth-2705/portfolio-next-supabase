@@ -1,11 +1,8 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
-import { useEffect } from "react";
 import Head from "next/head";
-import supabase from "@/utils/supabase";
 
 const Home = () => {
   return (
